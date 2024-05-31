@@ -36,11 +36,14 @@ def visualize(array, attempts, elapsed_time):
     plt.pause(0.01)
 
 # the size, minimum value and maximum value of the randomly generated array
-size = 100
+size = 10
 min_val = 1
 max_val = 1000
 random_array = generate_random_array(size, min_val, max_val)
 print("Unsorted array:", random_array)
+
+# Start the timer
+start_time = time.time()
 
 # Set up the plot
 plt.ion()
